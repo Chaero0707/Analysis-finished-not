@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "OGS Analysis Alert Blocker",
+  "version": "1.0",
+  "description": "Removes the 'Analysis finished' alert on Online Go Server.",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["*://*://*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
